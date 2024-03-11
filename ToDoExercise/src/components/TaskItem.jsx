@@ -98,8 +98,16 @@ const TaskItem = ({ id, title, category, completed }) => {
         <ListItemIcon>
           <Checkbox checked={completed} onChange={handlecheck} />
         </ListItemIcon>
-        <ListItemText primary={title} />
-        <ListItemText primary={category} />
+        <ListItemText
+          primary={title}
+          primaryTypographyProps={{ variant: "body1", noWrap: true }}
+          sx={{ flex: "1" }}
+        />
+        <ListItemText
+          primary={category}
+          primaryTypographyProps={{ variant: "body1", noWrap: true }}
+          sx={{ flex: "1" }}
+        />
         <ListItemIcon>
           <IconButton onClick={handleEdit}>
             <EditIcon />

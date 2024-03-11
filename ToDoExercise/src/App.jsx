@@ -87,7 +87,7 @@ function App() {
       <div style={{ marginTop: "100px", marginLeft: "64px" }}>
         {currentPage == "tasks" && (
           <Grid container spacing={2}>
-            <Grid item xs={2} bgcolor="#fafafa" style={{ padding: 16 }}>
+            <Grid item xs={3} bgcolor="#fafafa" style={{ padding: 16 }}>
               <Paper>
                 <CategoryList />
               </Paper>
