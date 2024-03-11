@@ -92,7 +92,7 @@ function App() {
                 <CategoryList />
               </Paper>
             </Grid>
-            <Grid item xs={8} bgcolor="#fafafa" style={{ padding: 16 }}>
+            <Grid item xs={8.5} bgcolor="#fafafa" style={{ padding: 16 }}>
               <Paper style={{ marginTop: 16 }}>
                 <TaskGrid />
               </Paper>
