@@ -18,9 +18,7 @@ const taskSlice = createSlice({
     reducers: {
         taskAdded: (tasks, action) => {
             lastID++;
-            //tasks.list.push(action.payload);
             tasks.storedTasks.push({id: lastID, title: action.payload.title, category: action.payload.category, completed: false, timeOpen: Date.now()});
-            //state.push({id: lastID, title: action.payload.title, category: action.payload.category, completed: false});
             tasks.history.push({type: ADD_TASK, payload: tasks.storedTasks[tasks.storedTasks.length - 1]});
         },
         taskCompleted: (tasks, action) => {

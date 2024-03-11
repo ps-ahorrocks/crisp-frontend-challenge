@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit"
-import categories from "../data/categories"
 
 export const availableCategories = [
     {id: 1, name: "All", value: "" },

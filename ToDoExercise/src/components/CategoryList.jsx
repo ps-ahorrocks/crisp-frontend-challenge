@@ -1,10 +1,4 @@
-import {
-  CardHeader,
-  List,
-  ListItem,
-  ListItemButton,
-  ListSubheader,
-} from "@mui/material";
+import { List, ListItemButton, ListSubheader } from "@mui/material";
 import React from "react";
 import { availableCategories, categoryChanged } from "../store/categories";
 import { useDispatch } from "react-redux";
@@ -16,8 +10,6 @@ const CategoryList = () => {
   const dispatch = useDispatch();
 
   const handleClick = (category) => {
-    let logFilter = `Clicked ${category.name}`;
-    console.log(logFilter);
     dispatch(categoryChanged(category));
   };
 

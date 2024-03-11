@@ -1,10 +1,8 @@
 import {
   Button,
   Checkbox,
-  Icon,
   IconButton,
   ListItem,
-  ListItemButton,
   ListItemIcon,
   ListItemSecondaryAction,
   ListItemText,
@@ -19,9 +17,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import React, { useState } from "react";
 import {
@@ -82,13 +78,10 @@ const TaskItem = ({ id, title, category, completed }) => {
   };
   const handleEdit = (event) => {
     handleClickOpen();
-    console.log("Edit clicked");
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Edit Category:", editCategory);
-    console.log("Edit Text Value:", editTextValue);
     dispatch(
       taskEdited({
         id: id,

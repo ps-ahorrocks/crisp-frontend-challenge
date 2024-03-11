@@ -1,6 +1,6 @@
 import React from "react";
 import TaskItem from "./TaskItem";
-import { List, Table, TableCell, TableHead, TableRow } from "@mui/material";
+import { List } from "@mui/material";
 import { useSelector } from "react-redux";
 import { createSelector } from "reselect";
 
@@ -19,13 +19,6 @@ const TaskList = () => {
   const currentTasks = useSelector(getCurrentTasks);
 
   const tasks = useSelector((state) => state.tasks.storedTasks);
-  //   const tasks = [
-  //     { id: 1, title: "task1", category: "work", completed: true },
-  //     { id: 2, title: "task2", category: "work", completed: false },
-  //     { id: 3, title: "task3", category: "work", completed: false },
-  //     { id: 4, title: "task4", category: "work", completed: false },
-  //     { id: 5, title: "task5", category: "work", completed: false },
-  //   ];
 
   return (
     <List>

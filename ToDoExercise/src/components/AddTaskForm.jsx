@@ -8,7 +8,6 @@ import {
   Box,
   Grid,
 } from "@mui/material";
-import Paper from "@mui/material/Paper";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { taskAdded } from "../store/tasks";
@@ -29,8 +28,6 @@ const AddTaskForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log("Category:", category);
-    console.log("Text Value:", textValue);
     dispatch(
       taskAdded({
         title: textValue,

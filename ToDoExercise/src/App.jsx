@@ -2,11 +2,9 @@ import { useState } from "react";
 import React from "react";
 import {
   AppBar,
-  Container,
   CssBaseline,
   Drawer,
   Grid,
-  Stack,
   Typography,
   Toolbar,
   IconButton,
@@ -15,19 +13,14 @@ import {
   ListItemText,
   ListItemIcon,
   Divider,
-  appBarClasses,
-  gridClasses,
   ListItemButton,
 } from "@mui/material";
 import Paper from "@mui/material/Paper";
 import MenuIcon from "@mui/icons-material/Menu";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
 import AssignmentIcon from "@mui/icons-material/Assignment";
 import TimelineIcon from "@mui/icons-material/Timeline";
 import "./App.css";
 import CategoryList from "./components/CategoryList";
-import AddTaskForm from "./components/AddTaskForm";
-import TaskList from "./components/TaskList";
 import TaskGrid from "./components/TaskGrid";
 import { Provider } from "react-redux";
 import MetricGrid from "./components/MetricGrid";
