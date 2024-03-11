@@ -1,17 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit"
 
-let lastID = 5;
+let lastID = 0;
 const ADD_TASK = "ADD_TASK";
 const DELETE_TASK = "DELETE_TASK";
 
 const taskSlice = createSlice({
     name: "tasks",
     initialState: {storedTasks: [
-            { id: 1, title: "task1", category: "work", completed: true, timeOpen: 1709944275159, timeComplete: 1709944295159 },
-            { id: 2, title: "task2", category: "work", completed: false, timeOpen: 1709944275159 },
-            { id: 3, title: "task3", category: "work", completed: false, timeOpen: 1709944275159 },
-            { id: 4, title: "task4", category: "work", completed: false, timeOpen: 1709944275159 },
-            { id: 5, title: "task5", category: "personal", completed: false, timeOpen: 1709944275159 },
+            // { id: 1, title: "task1", category: "work", completed: true, timeOpen: 1709944275159, timeComplete: 1709944295159 },
+            // { id: 2, title: "task2", category: "work", completed: false, timeOpen: 1709944275159 },
+            // { id: 3, title: "task3", category: "work", completed: false, timeOpen: 1709944275159 },
+            // { id: 4, title: "task4", category: "work", completed: false, timeOpen: 1709944275159 },
+            // { id: 5, title: "task5", category: "personal", completed: false, timeOpen: 1709944275159 },
         ],
         history: []
     },
